@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+⭐ Support
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+If you like this project, please star ⭐ the repository
+and feel free to fork or contribute.
+# 📝 Task Manager App (Web + Android)
 
-## Available Scripts
+A modern **Task Manager application** built using **React**, **Firebase**, and **Android (Capacitor)**.  
+The app allows users to register, log in, and manage their daily tasks securely on both **web** and **Android mobile**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Live Website
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🌐 **Firebase Hosted URL**  
+https://task-manager-7a93b.web.app/login
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📱 Android Application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Android app generated using **Capacitor**
+- Same Firebase backend as the web app
+- Optimized **release APK (small size)**
+- APK files are **not committed to GitHub** (best practice)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔐 Authentication
+- User Registration (Username, Email, Password)
+- User Login
+- Firebase Authentication
+- Personalized dashboard with username
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ✅ Task Management
+- Add new tasks
+- Set due date
+- Optional description
+- Mark tasks as completed
+- Delete tasks
+- Filter tasks (All / Completed / Pending)
 
-### `npm run eject`
+### 🎨 UI & UX
+- Clean and modern UI
+- Responsive design (mobile + desktop)
+- Highlighted input fields
+- User-friendly date picker
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠 Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🌐 Web
+- React (Create React App)
+- Tailwind CSS
+- React Router
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🔥 Backend
+- Firebase Authentication
+- Cloud Firestore
+- Firebase Hosting
 
-## Learn More
+### 🤖 Mobile
+- Capacitor
+- Android Studio
+- Gradle (Release build)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 Project Structure
 
-### Code Splitting
+task-manager/
+│
+├── android/ # Android (Capacitor) project
+├── public/ # Static files
+├── src/
+│ ├── components/ # UI components
+│ ├── context/ # Auth & Task Context
+│ ├── firebase/ # Firebase config
+│ ├── pages/ # Login, Register, Dashboard
+│ ├── routes/ # Protected routes
+│ ├── App.jsx
+│ └── index.js
+│
+├── firebase.json
+├── tailwind.config.js
+├── package.json
+├── .gitignore
+└── README.md
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔒 Security
 
-### Making a Progressive Web App
+- Firebase API keys are **safe to expose** (client-side only)
+- Firestore access protected using **security rules**
+- Sensitive files excluded via `.gitignore`:
+  - `node_modules/`
+  - `build/`
+  - `android/app/build/`
+  - `*.apk`
+  - `*.aab`
+  - `.firebase/`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+👨‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Vikas Bhor
+MSc Computer Science
+Web & Android Developer
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
